@@ -33,6 +33,11 @@
                 <td> @Empleado.Cedula | @Empleado.Nombre @Empleado.Apellidos | @Empleado.CorreoElectronico </td>
                 <td>
                     <div class="text-right">
+
+                        <a href="/Empleado/upsert/@Empleado.Id" class="btn btn-success text-white" style="cursor:pointer">
+                            <i class="fas fa-edit"></i>
+                        </a>
+
                         <a onclick=Delete("@Empleado.Id") class="btn btn-danger text-white" style="cursor:pointer">
                             <i class="fas fa-trash-alt"></i>
                         </a>

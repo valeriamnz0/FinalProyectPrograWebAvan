@@ -38,6 +38,7 @@ namespace Examen.Controllers
             return View(Repository.Listar());
         }
 
+
         public IActionResult Upsert(int? id)
         {
 
@@ -62,7 +63,7 @@ namespace Examen.Controllers
 
             return View(Empleado);
         }
-
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Upsert(Empleado Empleado)
