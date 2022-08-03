@@ -11,27 +11,28 @@
 
 </style>
 
-<div class="text-center row justify-content-center bg-dark col-8" style="margin-top: 12%;">
 
-	<article class="card-body">
+<div class="text-center row justify-content-center col-12 bg-dark " style="margin-top: 12%;">
+
+	<article class="card-body col-9 offset-2">
 		<form method="post">
-			<div class=" text-light">
+			<div class="text-light">
 				<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 				@if (Model.Id > 0)
 				{
 					titulo = "Editar Empleado";
 				}
-				<div class=" border-bottom col-8">
+				<div class=" border-bottom col-9">
 					<h2 class="text-light">@titulo</h2>
 				</div>
 				<div class=" pt-4">
 
-					<div class="form-group row">
+					<div class="form-group row ">
 						<div class="col-3">
 							<label asp-for="Cedula"></label>
 						</div>
-						<div class="col-5">
-							<input asp-for="Cedula" class="form-control" />
+						<div class="col-6">
+							<input asp-for="Cedula" class="form-control bg-secondary text-light" />
 							<span asp-validation-for="Cedula" class="text-danger"></span>
 						</div>
 					</div>
@@ -40,8 +41,8 @@
 						<div class="col-3">
 							<label asp-for="Nombre"></label>
 						</div>
-						<div class="col-5">
-							<input asp-for="Nombre" class="form-control" />
+						<div class="col-6">
+							<input asp-for="Nombre" class="form-control bg-secondary text-light" />
 							<span asp-validation-for="Nombre" class="text-danger"></span>
 						</div>
 					</div>
@@ -50,49 +51,56 @@
 						<div class="col-3">
 							<label asp-for="Apellidos"></label>
 						</div>
-						<div class="col-5">
-							<input asp-for="Apellidos" class="form-control" />
+						<div class="col-6">
+							<input asp-for="Apellidos" class="form-control bg-secondary text-light" />
 							<span asp-validation-for="Apellidos" class="text-danger"></span>
 						</div>
 					</div>
 
 					<div class="form-group row">
+
+						<label asp-for="CorreoElectronico" class="form-text col-3 text-center"></label>
+
+						<div class="input-group col-6">
+							
+							<input asp-for="CorreoElectronico" type="email" class="form-control bg-secondary text-light"
+								   aria-describedby="ayudaCorreoElectronico" />
+						</div>
+
+						@*<small id="ayudaCorreoElectronico" class="form-text text-muted">
+						El Correo Electrónico del Empleado.
+						</small>*@
+						<span asp-validation-for="CorreoElectronico" class="text-danger"></span>
+					</div>
+
+
+
+
+					<div class="form-group row">
 						<div class="col-3">
 							<label asp-for="Genero" class="form-text"></label>
 						</div>
+						<div class="col-6">
+							@foreach (var genero in Enum.GetValues(typeof(Generos)))
+							{
+								<label class="form-check form-check-inline">
+									<input asp-for="Genero" type="radio" value="@((int)genero)"
+									   class="form-check form-check-input" aria-describedby="ayudaGenero" />
+									@Enum.GetName(typeof(Generos), genero)
+								</label>
+							}
+						</div>
+
 						<div>
 						</div>
-						@foreach (var genero in Enum.GetValues(typeof(Generos)))
-						{
-							<label class="form-check form-check-inline">
-								<input asp-for="Genero" type="radio" value="@((int)genero)"
-								   class="form-check form-check-input" aria-describedby="ayudaGenero" />
-								@Enum.GetName(typeof(Generos), genero)
-							</label>
-						}
+
 						@*<small id="ayudaGenero" class="form-text text-muted">
 						Género del Empleado.
 						</small>*@
 						<span asp-validation-for="Genero" class="text-danger col-4"></span>
 					</div>
 
-					<div class="form-group row">
-						
-						<label asp-for="CorreoElectronico" class="form-text col-8 text-center"></label>
-						
-						<div class="input-group col-6 offset-1">
-							<div class="input-group-prepend">
-								<span class="input-group-text">@@</span>
-							</div>
-							<input asp-for="CorreoElectronico" type="email" class="form-control"
-								   aria-describedby="ayudaCorreoElectronico" />
-						</div>
-						
-						@*<small id="ayudaCorreoElectronico" class="form-text text-muted">
-							El Correo Electrónico del Empleado.
-						</small>*@
-						<span asp-validation-for="CorreoElectronico" class="text-danger"></span>
-					</div>
+
 
 
 					<div class="form-group row">
