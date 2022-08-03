@@ -8,65 +8,7 @@
     <div class="text-center">
         <h1 class="display-4">Welcome</h1>
     </div>
-
-    <div class=" text-sm-center px-1 py-1 text-center">
-        <img src="~/lib/Imagenes/Fidelitas2.png" style="width:400px;height:200px; text-align:center" />
-    </div>
-
-
-    <div class="container-fluid">
-        <h1>Contenedor Fluido</h1>
-        <ul>
-            <li>Contiene un ancho fluido el cual se estirará al 100% de su elmento padre.</li>
-            <li>Tiene un espacio alrededor de los elmentos predeterminado de 10px.</li>
-        </ul>
-
-        @* Filas y Columnas *@
-        <div class="row" style="margin-top: 20px;">
-            <div class="col-lg-8 order-lg-0 col-md-6 order-md-2 col-sm-12 order-sm-0 contenido">
-                <h3>Contenido</h3>
-                <p><b>Escritorio:</b> 8 columnas de ancho.</p>
-                <p><b>Tablet:</b> 6 columnas de ancho.</p>
-                <p><b>Teléfono:</b> 12 columnas de ancho.</p>
-            </div>
-            <div class="col-lg-4 order-lg-0 col-md-6 order-md-1 col-sm-12 order-sm-0 lateral">
-                <h3>Lateral</h3>
-                <p><b>Escritorio:</b> 4 columnas de ancho.</p>
-                <p><b>Tablet:</b> 6 columnas de ancho.</p>
-                <p><b>Teléfono:</b> 12 columnas de ancho.</p>
-            </div>
-        </div>
-        <div class="row" style="margin-top: 20px;">
-            <div class="col-lg-2 col-md-4 col-sm-12 celda">Celda</div>
-            <div class="col-lg-2 col-md-4 col-sm-12 celda">Celda</div>
-            <div class="col-lg-2 col-md-4 col-sm-12 celda">Celda</div>
-            <div class="col-lg-2 col-md-4 col-sm-12 celda">Celda</div>
-            <div class="col-lg-2 col-md-4 col-sm-12 celda">Celda</div>
-            <div class="col-lg-2 col-md-4 col-sm-12 celda">Celda</div>
-        </div>
-
-        @* Espaciadores *@
-        <div class="row" style="margin-top: 20px;">
-            <div class="col-lg-4 offset-lg-0 col-md-2 offset-md-3 col-sm-10 offset-sm-1 celda">Espacio</div>
-            <div class="col-lg-4 offset-lg-0 col-md-2 offset-md-0 col-sm-10 offset-sm-1 celda">Espacio</div>
-            <div class="col-lg-4 offset-lg-0 col-md-2 offset-md-0 col-sm-10 offset-sm-1 celda">Espacio</div>
-        </div>
-
-        <div class="row" style="margin-top: 20px;">
-            <div class="col-12 celda">
-                <ol>
-                    @foreach (Elemento elemento in Model)
-                    {
-                        elementos++;
-                        <li>@elemento.Nombre</li>
-                    }
-                </ol>
-                <p>
-                    La cantidad de elementos es: @elementos
-                </p>
-            </div>
-        </div>
-    </div>
+    
 </div>
 
 

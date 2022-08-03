@@ -70,3 +70,15 @@ C:\Users\capa6\Desktop\New folder\FinalProyectPrograWebAvan\Examen1\Examen.Model
 \\Mac\Home\Desktop\FinalProyectPrograWebAvan-main\Examen1\Examen.Models\obj\Debug\net5.0\Examen.Models.dll
 \\Mac\Home\Desktop\FinalProyectPrograWebAvan-main\Examen1\Examen.Models\obj\Debug\net5.0\ref\Examen.Models.dll
 \\Mac\Home\Desktop\FinalProyectPrograWebAvan-main\Examen1\Examen.Models\obj\Debug\net5.0\Examen.Models.pdb
+D:\Repositorios\FinalProyectPrograWebAvan\Examen1\Examen.Models\bin\Debug\net5.0\Examen.Models.deps.json
+D:\Repositorios\FinalProyectPrograWebAvan\Examen1\Examen.Models\bin\Debug\net5.0\Examen.Models.dll
+D:\Repositorios\FinalProyectPrograWebAvan\Examen1\Examen.Models\bin\Debug\net5.0\Examen.Models.pdb
+D:\Repositorios\FinalProyectPrograWebAvan\Examen1\Examen.Models\obj\Debug\net5.0\Examen.Models.csproj.AssemblyReference.cache
+D:\Repositorios\FinalProyectPrograWebAvan\Examen1\Examen.Models\obj\Debug\net5.0\Examen.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositorios\FinalProyectPrograWebAvan\Examen1\Examen.Models\obj\Debug\net5.0\Examen.Models.AssemblyInfoInputs.cache
+D:\Repositorios\FinalProyectPrograWebAvan\Examen1\Examen.Models\obj\Debug\net5.0\Examen.Models.AssemblyInfo.cs
+D:\Repositorios\FinalProyectPrograWebAvan\Examen1\Examen.Models\obj\Debug\net5.0\Examen.Models.csproj.CoreCompileInputs.cache
+D:\Repositorios\FinalProyectPrograWebAvan\Examen1\Examen.Models\obj\Debug\net5.0\Examen.Models.dll
+D:\Repositorios\FinalProyectPrograWebAvan\Examen1\Examen.Models\obj\Debug\net5.0\refint\Examen.Models.dll
+D:\Repositorios\FinalProyectPrograWebAvan\Examen1\Examen.Models\obj\Debug\net5.0\Examen.Models.pdb
+D:\Repositorios\FinalProyectPrograWebAvan\Examen1\Examen.Models\obj\Debug\net5.0\ref\Examen.Models.dll
