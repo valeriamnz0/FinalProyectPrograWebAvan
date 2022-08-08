@@ -85,6 +85,7 @@ namespace Examen
                 (options => options.UseSqlServer(Configuration.GetConnectionString("Default")))
                     .AddUnitOfWork<ApplicationDbContext>()
                     .AddRepository<Rol, RolRepository>()
+                    .AddRepository<Cliente, ClienteRepository>()
                     .AddRepository<Empleado, EmpleadoRepository>(); 
 
             services.AddScoped<IApplicationDbContext>
